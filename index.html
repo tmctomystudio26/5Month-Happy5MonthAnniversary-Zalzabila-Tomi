@@ -1,1 +1,243 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <meta name="theme-color" content="#8B0000">
+  <meta name="msapplication-navbutton-color" content="#8B0000">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+  <title>5 Month - Happy Anniversary Sayangku💞</title>
+  <meta name="description" content="Only For You Baby">
+  <meta property="og:title" content="Ini Untukmu ✨">
+  <meta property="og:description" content="Spesial Gift Buat Kamu ✨">
+  <meta property="og:image" content="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhMDugl2siKVTnQUhkzqZXmNhnUl_IXm-tsnodgHf4C3dPn6v4gz06nVm1ASqpRXO65Dg3PkYB9bKsThBPUxygLD9Euem9SSTr0LRIGK9x5uaLvK4WIPn6VlSx0qSrPGhTknGVHeVMpioiBcXiqrk-dF3d4SYS8QIkWkDlMgRrdF4vw_iw-EOgTYcwo6xhs/s300/1000314955.jpg">
+
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Handlee&family=Sriracha&display=swap" rel="stylesheet">
+  <script src="https://htmlku.com/prod/typeit.js"></script>
+  <link rel="stylesheet" href="https://htmlku.com/prod/kado/style.css">
+
+  <style>
+    /* 1. Background Terang (No Dark Overlay) */
+    .background-overlay {
+        filter: brightness(1.0) !important;
+        background-color: transparent !important;
+        mask-image: none !important;
+        -webkit-mask-image: none !important;
+    }
+    .background-overlay::after { display: none !important; }
+
+    /* 2. Kotak Transparan Bening */
+    #hal2, #hal3, #hal4, .kue-container {
+        background: rgba(255, 255, 255, 0.25) !important;
+        backdrop-filter: blur(2px) !important;
+        -webkit-backdrop-filter: blur(2px) !important;
+        border: 1px solid rgba(255, 255, 255, 0.4) !important;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.1) !important;
+    }
+
+    /* 3. Teks Putih dengan Bayangan Hitam */
+    body, h2, p, .message p {
+        color: #ffffff !important;
+        text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.9) !important;
+        font-weight: 500;
+    }
+
+    /* 4. Pop Up 5 Month */
+    #popupSpesial {
+      position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+      background: rgba(0, 0, 0, 0.7); z-index: 9999;
+      display: none; align-items: center; justify-content: center;
+      flex-direction: column; opacity: 0; transform: scale(0.8);
+      transition: all 0.5s ease; backdrop-filter: blur(3px);
+    }
+    #popupSpesial h3 {
+      font-family: 'Sriracha', cursive; font-size: 28px;
+      text-shadow: 0 0 10px #ff69b4, 0 0 20px #ff1493; color: #ffe6f2; text-align: center;
+    }
+
+    /* 5. Game Tangkap Hati Area */
+    #game-area-baru {
+        position: relative; height: 280px; width: 100%; margin-top: 15px;
+        border-radius: 15px; background: rgba(255, 255, 255, 0.3) !important;
+        border: 1px solid rgba(255, 192, 203, 0.6); overflow: hidden;
+    }
+    .floating-heart { position: absolute; font-size: 35px; cursor: pointer; z-index: 10; animation: floatAnim 3s ease-in-out infinite alternate; }
+    @keyframes floatAnim { 0% { transform: translateY(0) rotate(-10deg); } 100% { transform: translateY(-20px) rotate(10deg); } }
+
+    /* 6. Container Pesan Akhir (ANTI AUTO SCROLL) */
+    #containerPesan {
+        width: 100%; 
+        box-sizing: border-box; 
+        height: 250px; 
+        max-height: 250px;
+        overflow-y: auto; /* Scroll manual aktif */
+        overflow-anchor: none; /* Mencegah browser menarik layar ke bawah */
+        padding: 10px 5px;
+        text-align: left; 
+        scrollbar-width: thin; 
+        scrollbar-color: #ffadd2 transparent;
+        scroll-behavior: auto !important; /* Matikan smooth scroll otomatis */
+    }
+    #containerPesan::-webkit-scrollbar { width: 4px; }
+    #containerPesan::-webkit-scrollbar-thumb { background-color: #ffadd2; border-radius: 10px; }
+
+    /* Pop Up Balasan */
+    #popupBalasan {
+        position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+        background: rgba(0,0,0,0.4); z-index: 10000; display: none;
+        justify-content: center; align-items: center; backdrop-filter: blur(3px);
+    }
+    .box-balasan {
+        background: rgba(255, 255, 255, 0.9); width: 85%; max-width: 350px;
+        padding: 20px; border-radius: 20px; text-align: center;
+    }
+    .box-balasan h4 { color: #d3337b !important; text-shadow: none !important; }
+    .box-balasan textarea { width: 100%; height: 80px; border: 2px solid #ffc2d1; border-radius: 10px; padding: 10px; color: #333 !important; text-shadow: none !important; }
+  </style>
+
+  <script>
+    // Mematikan paksa fungsi scroll bawaan browser/library agar layar diam
+    window.scrollTo = function() {}; 
+    window.scroll = function() {};
+    HTMLElement.prototype.scrollIntoView = function() {}; 
+  </script>
+</head>
+<body>
+
+  <audio src="https://raw.githubusercontent.com/tmctomystudio26/Foto/main/CUTTTTTBERGEMA%20UNTUK%20SELAMANYA%20-%20NADHIF%20BASAMALAH%20COVER%20MODERN%20AI%20SPEED%20UP.mp3" id="linkmp3" loop></audio>
+  <div class="background-overlay" data-src="https://raw.githubusercontent.com/tmctomystudio26/Foto/refs/heads/main/1001084549-picsay.jpg"></div>
+
+  <div id="popupSpesial">
+    <div class="content">
+      <div class="love-anim">💖</div>
+      <h3>HAPPY 5 MONTH<br>ANNIVERSARY SAYANG</h3>
+      <div class="love-anim" style="font-size:30px; margin-top:10px;">🥰💋</div>
+    </div>
+  </div>
+
+  <div id="popupBalasan">
+    <div class="box-balasan">
+        <h4>💌 Mau bilang apa ke aku?</h4>
+        <textarea id="pesanInput" placeholder="Ketik pesan cantikmu di sini ya sayang..."></textarea>
+        <br>
+        <button onclick="kirimKeWhatsApp()" style="background:#ff69b4; color:white; border:none; padding:10px 20px; border-radius:50px; margin-top:15px; font-weight:bold; text-shadow:none;">Kirim ke WA Aku ❤️</button>
+        <br>
+        <button onclick="tutupPopupBalasan()" style="background:transparent; color:#888; border:none; margin-top:10px; font-size:12px; text-shadow:none;">Nanti aja deh</button>
+    </div>
+  </div>
+
+  <div id="hal1">
+    <div class="envlope-wrapper">
+      <div id="envelope" class="close">
+        <div class="front flap"></div>
+        <div class="front pocket"></div>
+        <div class="letter">
+          <div class="message"><p>Alo Billa Cayangku! ✨</p></div>
+        </div>
+      </div>
+    </div>
+    <div class="reset"><button style="border-radius: 20px;padding:4px 12px;margin-top:-25px" onclick="bukaEnvelope()">Buka</button></div>
+  </div>
+
+  <div id="hal2" class="kotak sembunyi">
+    <h2 style="font-size:18.5px">Tangkap Cintanya! 💖</h2>
+    <p style="font-size:14.5px;">Billa Sayang, ayo tangkap 10 hati yang beterbangan buat ngumpulin cinta kita! 😘 semangat!</p>
+    <div id="progress-container"><div id="progress-bar"></div></div>
+    <p id="progress-text">0 / 10 Cinta Terkumpul</p>
+    <div id="game-area-baru"></div>
+    <button id="lanjutGameBaru" onclick="pindahHal(3)" class="sembunyi" style="margin-top:15px;">Yey! Lanjut ke Kejutan 🎉</button>
+  </div>
+
+  <div id="hal3" class="kotak sembunyi">
+    <h2 style="font-size:18.5px">Happy 5 Month Anniversary Sayangku🎉</h2>
+    <div class="kue-container">
+      <div class="lilin"><div class="api" id="apiLilin"></div></div>
+      <div class="kue"><div class="lapisan lapisan-atas"></div><div class="lapisan lapisan-tengah"></div><div class="lapisan lapisan-bawah"></div></div>
+    </div>
+    <p style="font-size:14.5px">Zalzabila sayang, tutup mata nya dulu, buat permintaan ya,<br>terus tiup lilinnya yaw cayang! 🫣</p>
+    <button onclick="tiupLilinBaru()">Tiup Lilin 🌬️</button>
+  </div>
+
+  <div id="hal4" class="kotak sembunyi">
+    <div id="stiker4" class="stiker"><img src="https://htmlku.com/0/panda/kue.gif" /></div>
+    <p style="font-size:11px; font-style:italic; margin:5px 0 10px 0; padding:0 15px;">sayang kalau tulisannya loncat loncat dan terscroll sendiri, tunggu tulisannya diketik sampai habis ya, lalu sayang bisa baca</p>
+    <div id="containerPesan">
+        <p id="teksCinta"></p>
+        <p id="pesanAkhir"></p>
+        <p id="teksLucu"></p>
+    </div>
+  </div>
+
+  <div class="tombol"><button onclick="tampilkanPopupBalasan()">💌 Balas</button></div>
+
+  <script src="https://htmlku.com/prod/kado/script.js"></script>
+  <script>
+    // Pastikan scroll tetap mati saat script lain berjalan
+    window.onscroll = function () { window.scrollTo(0, 0); };
+
+    // NASKAH UTAMA
+    const txtDoa = "Happy 5 Month Anniversary Baby! 🥰😍♥️💕💕❤️";
+
+    const txtPesanAkhir = "Sayang, selamat 5 bulan ya buat hubungan kita! ✨<br><br>" +
+    "Gak terasa ya, waktu berjalan begitu cepat sampai kita ada di titik ini. Pertama-tama, aku mau bilang makasih banyak... Terima kasih Billa sayang sudah mau bertahan sama aku sejauh ini. Aku tahu banget perjalanan 5 bulan ini bener-bener gak mudah. Kita sudah lewati banyak banget badai, perbedaan pendapat, sampai rasa capek yang luar biasa. Makasih kamu tetap memilih berdiri di sini, menggenggam tanganku, walau rasanya keadaan sering banget bikin kita ingin menyerah.<br><br>" +
+    "Di momen spesial ini, aku mau jujur dari hati yang paling dalam... Sayang, aku mau kamu tahu kalau rasa sayang dan cintaku ke kamu itu sudah melampaui logika apa pun. Aku sayang dan cinta sama kamu jauh melebihi rasa sayang dan cintaku pada diriku sendiri. Bahkan, rasa ini melebihi cintaku pada segalanya yang ada di dunia ini. Kamu adalah prioritas utamaku, pusat dari duniaku, dan alasan kenapa aku ingin terus menjadi orang yang lebih baik setiap harinya. Kebahagiaan kamu adalah bahagiaku, dan sakitnya kamu adalah lukaku yang paling dalam.<br><br>" +
+    "Satu hal yang harus kamu tanamkan di dalam hati kamu<br>" +
+    "Aku akan terus menyertai kamu di setiap langkahmu. Gak peduli seberapa berat hari yang kamu lalui, gak peduli sesulit apa masalah yang datang, aku akan selalu ada di samping kamu. Aku akan menyertai kamu saat kamu tertawa, dan aku akan jauh lebih setia menyertai kamu saat kamu terjatuh atau merasa sendirian. Kamu gak perlu takut menghadapi dunia, karena ada aku yang gak akan pernah beranjak dari sisi kamu dalam keadaan apa pun.<br><br>" +
+    "Aku juga mau minta maaf sedalam-dalamnya. Maaf ya sayang... maaf kalau selama 5 bulan ini aku sering banget bikin kamu sakit hati. Aku sadar ego aku kadang masih tinggi, aku sering bikin kamu nangis, atau bikin kita ribut cuma karena hal-hal sepele yang harusnya gak perlu dipermasalahkan. Aku bener-bener nyesel pernah bikin orang yang paling aku hargai di dunia ini ngerasain capek karena sikapku. 😔🥺🙏<br><br>" +
+    "Sayang, tolong jangan pernah nyerah sama hubungan kita ya. Aku mohon, kita harus selalu sama-sama terus, apapun rintangannya nanti. Kita berdua punya beban hidup dan masalah masing-masing, tapi tolong, jangan jadikan itu alasan untuk saling menjauh. Justru karena dunia ini keras, kita harus saling merangkul dan saling jadi sandaran. Aku gak bisa bayangin duniaku tanpa kamu di dalamnya.<br><br>" +
+    "Terus, soal nilai akademik kamu yang semester ini agak turun... Dengerin aku baik-baik ya sayang. Tolong jangan sedih berlarut-larut apalagi sampai putus asa. Angka-angka itu sama sekali gak mendefinisikan betapa hebat dan berharganya kamu di mataku. Aku tahu kamu sudah berjuang dan berusaha sangat keras. Ayo semangat lagi belajarnya! Jangan biarkan kegagalan kecil memadamkan api semangat kamu. Aku janji bakal selalu ada di belakang kamu, mendukung kamu, dan menemanimu sampai kamu sukses nanti. Kamu pasti bisa bangkit, Billa!<br><br>" +
+    "Sekali lagi, Happy 5 Month Anniversary Billa Sayangku. Kamu adalah segalanya bagiku, selamanya dan selamanya! ♥️♥️<br><br>" +
+    "Zalzabila ♥️❤️💕♥️♥️ Tomi<br>" +
+    "I love you so much forever together";
+
+    const txtLucu = ""; 
+    const nomorWA = "6285122936027";
+
+    /* --- LOGIKA GAME & POPUP --- */
+    let score = 0; const targetScore = 10;
+
+    // Override mulaiHal2 untuk game baru
+    window.mulaiHal2 = function() { 
+        console.log("Game Start");
+        score = 0; 
+        document.getElementById('game-area-baru').innerHTML = ""; // Bersihkan area
+        document.getElementById('progress-bar').style.width = "0%";
+        document.getElementById('progress-text').innerText = "0 / 10 Cinta Terkumpul";
+        document.getElementById('lanjutGameBaru').classList.add('sembunyi');
+        setInterval(spawnHeart, 800); 
+    }
+
+    function spawnHeart() {
+        if (score >= targetScore) return;
+        const heart = document.createElement('div'); heart.classList.add('floating-heart'); heart.innerHTML = '💖';
+        heart.style.left = Math.random() * 80 + '%'; heart.style.top = Math.random() * 80 + '%';
+        heart.onclick = function() { 
+            heart.remove(); score++; 
+            document.getElementById('progress-bar').style.width = (score/targetScore)*100 + '%'; 
+            document.getElementById('progress-text').innerText = score + " / 10 Cinta Terkumpul";
+            if(score>=targetScore) {
+                document.getElementById('progress-text').innerText = "Yey! Semua cinta terkumpul! 🎉";
+                document.getElementById('lanjutGameBaru').classList.remove('sembunyi');
+            }
+        };
+        document.getElementById('game-area-baru').appendChild(heart);
+        setTimeout(() => { if(heart.parentNode) heart.remove(); }, 3000);
+    }
+
+    function tiupLilinBaru() {
+      document.getElementById("apiLilin").style.opacity = "0";
+      var popup = document.getElementById("popupSpesial"); popup.style.display = "flex";
+      setTimeout(() => { popup.style.opacity = "1"; popup.style.transform = "scale(1)"; }, 50);
+      setTimeout(() => { popup.style.opacity = "0"; setTimeout(() => { popup.style.display = "none"; pindahHal(4); }, 500); }, 2000);
+    }
+
+    function tampilkanPopupBalasan() { document.getElementById('popupBalasan').style.display = 'flex'; }
+    function tutupPopupBalasan() { document.getElementById('popupBalasan').style.display = 'none'; }
+    function kirimKeWhatsApp() {
+        window.location.assign("https://api.whatsapp.com/send?phone="+nomorWA+"&text="+encodeURIComponent(document.getElementById('pesanInput').value));
+    }
+  </script>
+</body>
+</html>
